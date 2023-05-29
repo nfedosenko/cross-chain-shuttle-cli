@@ -1,0 +1,41 @@
+{
+  "type": "commonjs",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "name": "cross-chain-shuttle",
+  "author": "https://twitter.com/sir_fedos",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "npmtool",
+    "layerzero",
+    "crosschain",
+    "web3"
+  ],
+  "dependencies": {
+    "@ethersproject/experimental": "^5.7.0",
+    "@inquirer/confirm": "^1.0.11",
+    "@inquirer/input": "^1.1.2",
+    "@inquirer/prompts": "^1.2.3",
+    "@inquirer/select": "^1.1.7",
+    "@layerzerolabs/scan-client": "^0.0.1",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@types/coingecko-api": "^1.0.10",
+    "@types/figlet": "^1.5.6",
+    "@types/inquirer": "^9.0.3",
+    "chalk": "^4.1.2",
+    "coingecko-api": "^1.0.10",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "figlet": "^1.6.0",
+    "loading-cli": "^1.1.0",
+    "typechain": "^8.1.1"
+  },
+  "scripts": {
+    "generate-typechain": "typechain --target ethers-v5 --out-dir typechain '**/*.abi.json'",
+    "build": "npx tsc"
+  },
+  "bin": {
+    "cross-chain-shuttle": "/dist/index.js"
+  }
+}
