@@ -1,16 +1,20 @@
 {
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "name": "cross-chain-shuttle",
   "author": "https://twitter.com/sir_fedos",
+  "repository": "https://github.com/nfedosenko/cross-chain-shuttle-cli",
+  "homepage": "https://github.com/nfedosenko/cross-chain-shuttle-cli#readme",
   "license": "MIT",
   "keywords": [
     "cli",
     "npmtool",
     "layerzero",
-    "crosschain",
-    "web3"
+    "cross-chain",
+    "web3",
+    "typescript",
+    "blockchain"
   ],
   "dependencies": {
     "@ethersproject/experimental": "^5.7.0",
