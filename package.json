@@ -7,7 +7,6 @@
   "repository": "https://github.com/nfedosenko/cross-chain-shuttle-cli",
   "homepage": "https://github.com/nfedosenko/cross-chain-shuttle-cli#readme",
   "license": "MIT",
-  "postinstall": "typechain",
   "keywords": [
     "cli",
     "npmtool",
@@ -39,7 +38,8 @@
   },
   "scripts": {
     "generate-typechain": "typechain --target ethers-v5 --out-dir typechain '**/*.abi.json'",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "postinstall": "typechain"
   },
   "bin": {
     "cross-chain-shuttle": "/dist/index.js"
