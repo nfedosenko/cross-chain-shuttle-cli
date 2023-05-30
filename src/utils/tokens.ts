@@ -23,6 +23,18 @@ export const BlockchainToToken: any = {
             decimals: 6
         }
     },
+    [StargateBlockchainType.Metis]: {
+        [TokenType.METIS]: {
+            address: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+            poolId: 17,
+            decimals: 18
+        },
+        [TokenType.mUSDT]: {
+            address: '0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC',
+            poolId: 19,
+            decimals: 6
+        }
+    },
     [StargateBlockchainType.Polygon]: {
         [TokenType.USDC]: {
             address: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174',
@@ -65,11 +77,6 @@ export const BlockchainToToken: any = {
             address: '0x3B55E45fD6bd7d4724F5c47E0d1bCaEdd059263e',
             poolId: 16,
             decimals: 18
-        },
-        [TokenType.mUSDT]: {
-            address: '',
-            poolId: 19,
-            decimals: 6
         }
     },
     [StargateBlockchainType.BnbChain]: {
@@ -94,67 +101,57 @@ export const BlockchainToToken: any = {
             decimals: 18
         },
         [TokenType.METIS]: {
-            address: '',
+            address: '0xe552Fb52a4F19e44ef5A967632DBc320B0820639',
             poolId: 17,
-            decimals: 18
-        },
-        [TokenType.mUSDT]: {
-            address: '',
-            poolId: 19,
             decimals: 18
         },
     },
     [StargateBlockchainType.Ethereum]: {
         [TokenType.USDC]: {
-            address: '',
-            poolId: 0,
-            decimals: 18
+            address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+            poolId: 1,
+            decimals: 6
         },
         [TokenType.USDT]: {
-            address: '',
-            poolId: 0,
-            decimals: 18
+            address: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+            poolId: 2,
+            decimals: 6
         },
         [TokenType.DAI]: {
-            address: '',
+            address: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+            poolId: 3,
+            decimals: 18
+        },
+        [TokenType.SGETH]: {
+            address: '0x72E2F4830b9E45d52F80aC08CB2bEC0FeF72eD9c',
             poolId: 0,
             decimals: 18
         },
         [TokenType.FRAX]: {
-            address: '',
-            poolId: 0,
+            address: '0x853d955aCEf822Db058eb8505911ED77F175b99e',
+            poolId: 7,
             decimals: 18
         },
         [TokenType.USDD]: {
-            address: '',
-            poolId: 0,
+            address: '0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6',
+            poolId: 11,
             decimals: 18
         },
         [TokenType.SUSD]: {
-            address: '',
-            poolId: 0,
+            address: '0x57Ab1ec28D129707052df4dF418D58a2D46d5f51',
+            poolId: 14,
             decimals: 18
         },
         [TokenType.LUSD]: {
-            address: '',
-            poolId: 0,
-            decimals: 18
-        },
-        [TokenType.MAI]: {
-            address: '',
-            poolId: 0,
+            address: '0x5f98805A4E8be255a32880FDeC7F6728C6568bA0',
+            poolId: 15,
             decimals: 18
         },
         [TokenType.METIS]: {
-            address: '',
-            poolId: 0,
+            address: '0x9e32b13ce7f2e80a01932b42553652e053d6ed8e',
+            poolId: 17,
             decimals: 18
-        },
-        [TokenType.mUSDT]: {
-            address: '',
-            poolId: 0,
-            decimals: 18
-        },
+        }
     },
     [StargateBlockchainType.Arbitrum]: {
         [TokenType.USDC]: {

@@ -1,5 +1,4 @@
 #! /usr/bin/env node
-import fs from 'fs/promises'
 import dotenv from 'dotenv'
 import {program} from 'commander'
 import chalk from "chalk";
@@ -15,7 +14,6 @@ import {SingleCrossChainSwapSetup} from "./src/setups/singleCrossChainSwapSetup"
 import {IShuttleConfig} from "./src/interfaces/IShuttleConfig";
 import ConfigController from "./src/controllers/ConfigController";
 import {initAll} from "./src/utils/providers";
-import GasEstimator from "./src/controllers/GasEstimator";
 
 dotenv.config();
 
