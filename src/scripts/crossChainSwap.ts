@@ -14,7 +14,6 @@ import chalk from "chalk";
 import {createClient} from '@layerzerolabs/scan-client';
 import loading from 'loading-cli';
 import {IShuttleConfig} from "../interfaces/IShuttleConfig";
-import GasEstimator from "../controllers/GasEstimator";
 import PriceController from "../controllers/PriceController";
 
 const lzClient = createClient('mainnet');
