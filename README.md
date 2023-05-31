@@ -24,12 +24,15 @@ Install cross-chain-shuttle with npm
 ```bash
   npm install cross-chain-shuttle
 ```
-    
-## ✉️ Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+## ✉️ Environmental Variables
 
-`PRIVATE_KEY`
+To run the script on the behalf of your wallet, you would need to pass in the `PRIVATE_KEY`.
+You can either specify `PRIVATE_KEY` under your `.env` file or pass it directly from the terminal.
+
+Here is how you can do it from the terminal:
+
+```PRIVATE_KEY=1hfdf333jhfjdsf2 cross-chain-swap run ./shuttle-configs/path-to-config.json```
 
 
 
